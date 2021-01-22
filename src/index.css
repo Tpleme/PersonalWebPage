@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    background-image: url(resources/backgroundImage.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 70vh;
+    min-width: 100vh;
+    width: 70%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.portrait {
+    background-image: url(resources/portrait.png);
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+    top: -12%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.personName {
+
+    background: white;
+    width: 50%;
+    height: 5rem;
+    left: 2%;
+    top: 9%;
+    position: absolute; 
+    border-radius: 20rem;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jobDiv {
+
+    background: white;
+    width: 50%;
+    height: 5rem;
+    right: 2%;
+    top: 9%;
+    position: absolute; 
+    border-radius: 20rem;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
