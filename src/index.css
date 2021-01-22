@@ -20,7 +20,7 @@ main {
     min-height: 70vh;
     min-width: 100vh;
     width: 70%;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255,255,255,0.3));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
     border-radius: 2rem;
     z-index: 2;
     backdrop-filter: blur(1rem);
@@ -43,35 +43,35 @@ main {
     height: 15rem;
     top: -12%;
     border-radius: 50%;
+    border-style: solid;
     position: absolute;
 }
 
-.personName {
-
-    background: white;
-    width: 50%;
-    height: 5rem;
-    left: 2%;
-    top: 9%;
+.personName,
+.jobDiv {
+    background: linear-gradient(to bottom, rgba(122, 121, 121, 0.6), rgba(255, 255, 255, 0));
+    width: 45%;
+    height: 6rem;
     position: absolute; 
-    border-radius: 20rem;
     z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20rem;
+}
+
+.personName {
+    left: 2%;
+    top: 9%;
 }
 
 .jobDiv {
-
-    background: white;
-    width: 50%;
-    height: 5rem;
     right: 2%;
     top: 9%;
-    position: absolute; 
-    border-radius: 20rem;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+h1 {
+    color: rgb(199, 194, 194);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 40px;
 }
