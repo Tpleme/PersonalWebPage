@@ -5,7 +5,7 @@ define(['controller/tabController'], function (tabController) {
     externals.show = function (onclick) {
 
         $('.content').empty();
-        $('.content').append($('<h1>Test CV</h1>'));
+        $('.content').append($('<div class="pdfShower"></div>').append($('<iframe src="resources/CV_Leandro_Melo.pdf" title="CV Leandro Melo" style="width:800px; height:500px;" frameborder="0"></iframe>')));
 
         tabController.init(onclick);
     };
