@@ -121,7 +121,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     border-radius: 2rem;
     top: 35%;
 
@@ -138,4 +137,29 @@ h3 {
     text-align: center;
     font-size: 18px;
     margin: 2%;
+}
+
+.project {
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(to bottom, rgba(255, 255, 255,1), rgba(255, 255, 255, 0));
+    border-radius: 2rem;
+}
+
+.project h3 {
+    text-align: center;
+    padding: 2px;
+}
+
+.project:hover {
+    border-color: rgba(255, 255, 255, 1);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2));
+}
+
+.project img {
+    border-radius: 1.7rem;
 }

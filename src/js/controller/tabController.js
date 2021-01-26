@@ -1,30 +1,18 @@
 define(function () {
 
-    var externals = {};
+        var externals = {};
 
-    externals.init = function (onclick) {
+        externals.init = function (onclick) {
 
-        $('#aboutBtn').click(function () {
-                console.log("About tab has been pressed")
-                onclick('about');
-        })
+                $('#aboutBtn').click(() => onclick('about'));
 
-        $('#projectsBtn').click(function () {
-                console.log("Projects tab has been pressed")
-                onclick('projects');
-        })
+                $('#projectsBtn').click(() => onclick('projects'));
 
-        $('#cvBtn').click(function () {
-                console.log("cv tab has been pressed")
-                onclick('cv');
-        })
+                $('#cvBtn').click(() => onclick('cv'));
 
-        $('#contactsBtn').click(function () {
-                console.log("contacts tab has been pressed")
-                onclick('contacts');
-        })
-    };
+                $('#contactsBtn').click(() => onclick('contacts'));
+        }
 
-    return externals;
+        return externals;
 
 });
