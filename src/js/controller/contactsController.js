@@ -1,4 +1,4 @@
-define(['view/contactView'], function (contactsView) {
+define(['view/contactView'], function (contactView) {
 
     var internals = {};
     var externals = {};
@@ -20,7 +20,7 @@ define(['view/contactView'], function (contactsView) {
     };
 
     externals.init = function () {
-        contactsView.show(internals.reRoute)
+        contactView.show(internals.reRoute)
     };
 
     return externals;
